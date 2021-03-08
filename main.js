@@ -1,25 +1,52 @@
-function isEvenlyDivisible() {
+function isEvenlyDivisible(num1, num2) {
+  if (num1 % num2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-function halfSquare() {
+function halfSquare(num) {
+  return Math.pow(num , 2) / 2;
 }
 
-function isLong() {
+function isLong(str) {
+  if (str.length >= 15) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-function exclaim() {
+function exclaim(str) {
+  if (str[str.length - 1] === "!") {
+    return str;
+  } else {
+    return str + "!";
+  }
 }
 
 function countWords() {
 }
 
-function containsDigit() {
+function containsDigit(str) {
+  if (typeof(str) === "number") {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-function containsLowerCase() {
+function containsLowerCase(str) {
+  if (typeof(str) === "str") {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-function containsUpperCase() {
+function containsUpperCase(str) {
+  
 }
 
 function containsNonAlphanumeric() {
