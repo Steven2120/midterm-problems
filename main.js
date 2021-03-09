@@ -26,7 +26,13 @@ function exclaim(str) {
   }
 }
 
-function countWords() {
+function countWords(str) {
+  let output = "";
+  let words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    output += words[i];
+  }
+  return output.length - 4;
 }
 
 function containsDigit(str) {
@@ -53,22 +59,48 @@ function containsUpperCase(str) {
   }
 }
 
-function containsNonAlphanumeric() {
+function containsNonAlphanumeric(str) {
+  if (!str.indexOf("a")) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-function containsSpace() {
+function containsSpace(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
-function digits() {
+function digits(num) {
+  
 }
 
-function truncate() {
+function truncate(str) {
+  if (str.length >= 15) {
+    return str.substr(0,8) + "...";
+  } else {
+    return str;
+  }
 }
 
-function isValidPassword() {
+function isValidPassword(str) {
+  if (str !== /[A-Z0-9]/) {
+    return false;
+  }
 }
 
-function onlyPunchy() {
+function onlyPunchy(arr1, arr2) {
+  for (let i = 0; i < arr.length; i++) {
+    if (i < 15) {
+      return arr[i];
+    }
+  }
 }
 
 
