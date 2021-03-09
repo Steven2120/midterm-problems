@@ -46,7 +46,11 @@ function containsLowerCase(str) {
 }
 
 function containsUpperCase(str) {
-  
+  if (str.includes("A")) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function containsNonAlphanumeric() {
